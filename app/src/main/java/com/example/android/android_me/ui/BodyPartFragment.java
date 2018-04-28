@@ -34,8 +34,8 @@ public class BodyPartFragment extends Fragment {
     // TODO (1) Create a setter method and class variable to set and store of a list of image resources
 
     public static final String LOG_TAG = BodyPartFragment.class.getSimpleName();
-    private static List<Integer> mImagelist;
-    private static int mImageIdx;
+    private List<Integer> mImagelist;
+    private int mImageIdx;
 
     // TODO (2) Create another setter method and variable to track and set the index of the list item to display
         // ex. index = 0 is the first image id in the given list , index 1 is the second, and so on
@@ -73,10 +73,10 @@ public class BodyPartFragment extends Fragment {
         return rootView;
     }
 
-    public static void setImageList(List<Integer> list){
+    public void setImageList(List<Integer> list){
         mImagelist = list;
     }
-    public static void setImageIdx(int i){
+    public void setImageIdx(int i){
         mImageIdx = i;
     }
 }
